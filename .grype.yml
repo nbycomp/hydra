@@ -1,2 +1,7 @@
 ignore:
   - vulnerability: CVE-2023-2650
+  # Ory's own advisory matches the fork's pseudo-version (v2.0.0-...), which
+  # sorts below the fix; fix commit 0b84568fffcc (v26.2.0) is in this branch.
+  - vulnerability: GHSA-r9w3-57w2-gch2
+    package:
+      name: github.com/ory/hydra/v2
